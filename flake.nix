@@ -13,7 +13,10 @@
       in
       {
         devShells.default = pkgs.mkShell {
-          packages = [ pkgs.cowsay ];
+          packages = [ 
+            pkgs.cowsay 
+            pkgs.nodejs_24
+          ];
           shellHook = ''zsh'';
         };
       }
