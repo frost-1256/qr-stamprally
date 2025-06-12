@@ -1,2 +1,2 @@
-# qr-stamprally
-QR Stamprally
+# QR Stamprally
+QRコードでスタンプラリーができるシステムです
