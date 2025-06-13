@@ -13,10 +13,10 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="grid justify-items-stretch">
-      <div className="justify-self-center">
-        <h1 className="font-bold mt-1 mb-2 ">スタンプラリー</h1> 
-    <button onClick={tmp_alert} className="inline-flex h-10 items-center justify-center rounded-md bg-cyan-500 px-4 font-medium text-neutral-50 shadow-lg shadow-neutral-500/20 transition active:scale-90">押して！</button>
+    <div className="grid justify-center">
+      <div className="">
+        <h1 className="font-bold mt-1 mb-2 grid justify-center">スタンプラリー</h1> 
+    <button onClick={tmp_alert} className="inline-flex h-10 items-center justify-center rounded-md bg-cyan-500 px-3 font-medium text-neutral-50 shadow-lg shadow-neutral-500/20 transition active:scale-90">スタンプを押す</button>
       </div>
     </div>
   );
