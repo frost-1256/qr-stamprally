@@ -16,6 +16,7 @@
           packages = [ 
             pkgs.cowsay 
             pkgs.nodejs_24
+            pkgs.ffmpeg-full
           ];
           shellHook = ''zsh'';
         };

@@ -2,7 +2,7 @@
     {
         "id" : "1",
         "name" : "hoge",
-        "stamp_img" : ""
+        "stamp_img" : "stamps/stamp.webp"
     },
     {
         "id" : "2",

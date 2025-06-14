@@ -8,7 +8,10 @@ declare module "@remix-run/node" {
   }
 }
 
+assetsInclude: ["**/*.webp"]
+
 export default defineConfig({
+  assetsInclude: ["**/*.webp"],
   plugins: [
     remix({
       future: {
