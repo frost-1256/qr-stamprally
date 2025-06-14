@@ -1,7 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 import stamps from '../stamps.json';
 import { useState } from 'react';
-import { QrReader } from 'react-qr-reader';
+import { Scanner } from '@yudiel/react-qr-scanner';
 
 export const meta: MetaFunction = () => {
   return [
@@ -46,5 +46,5 @@ export default function Index() {
 }
 
 export function QRCode() {
-  
+  return <Scanner onScan={(result) => console.log(result)} />; 
 }
