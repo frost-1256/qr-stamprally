@@ -1,7 +1,8 @@
 import type { MetaFunction } from "@remix-run/node";
 import stamps from '../stamps.json';
 import { useState } from 'react';
-import qr_reader from "./qr_reader";
+import Qrreader from "./qr_reader";
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
 
 export const meta: MetaFunction = () => {
   return [
@@ -19,12 +20,25 @@ export default function Index() {
     return true;
   }
 
+  const [showQrReader, setShowQrReader] = useState(false);
+
+  const handleStamp = () => {
+    setShowQrReader(prevShow => !prevShow); // 現在の状態を反転させる
+    //alert('Clicked!');
+    setShowAlert(true);
+    return true;
+  };
+
   return (
     <div>
       <div className="grid justify-center">
-        <div >
+        <div>
           <h1 className="font-bold mt-1 mb-2 grid justify-center">スタンプラリー</h1>
-          <button onClick={tmp_alert} className="inline-flex h-10 items-center justify-center rounded-md bg-cyan-500 px-3 font-medium text-neutral-50 shadow-lg shadow-neutral-500/20 transition active:scale-90">スタンプを押す</button>
+          <button onClick={handleStamp} className="inline-flex h-10 items-center justify-center rounded-md bg-cyan-500 px-3 font-medium text-neutral-50 shadow-lg shadow-neutral-500/20 transition active:scale-90">スタンプを押す</button>
+                {/* showQrReaderがtrueの場合のみQrReaderコンポーネントを表示 */}
+          {showQrReader && <Qrreader />}
+
+          {!showQrReader}
         </div>
       </div>
       <div className="flex justify-center flex-wrap m-10">
