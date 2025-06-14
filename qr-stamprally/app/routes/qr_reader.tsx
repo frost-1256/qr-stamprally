@@ -57,6 +57,7 @@ function qr_reader() {
                     allowMultiple={true} // これを指定すると連続でスキャンできる
                     // スキャン時の UI をカスタマイズ
                     components={{
+                        audio: false,
                         tracker: customTracker, // コード検出時の視覚的なフィードバックをカスタマイズ
                         onOff: true, // スキャンのオンオフを切り替えるボタンを表示する (default: false)
                         zoom: true, // ズーム機能を有効にする (default: false)
