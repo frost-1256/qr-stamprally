@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 import stamps from '../stamps.json';
 import { useState } from 'react';
+import qr_reader from "./qr_reader";
 
 export const meta: MetaFunction = () => {
   return [
