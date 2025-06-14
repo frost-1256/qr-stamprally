@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 import stamps from '../stamps.json';
 import { useState } from 'react';
+import { QrReader } from 'react-qr-reader';
 
 export const meta: MetaFunction = () => {
   return [
@@ -42,4 +43,8 @@ export default function Index() {
 
     </div>
   );
+}
+
+export function QRCode() {
+  
 }

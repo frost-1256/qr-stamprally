@@ -21,6 +21,7 @@
     "@remix-run/node": "^2.16.8",
     "@remix-run/react": "^2.16.8",
     "@remix-run/serve": "^2.16.8",
+    "@yudiel/react-qr-scanner": "^2.3.1",
     "cross-env": "^7.0.3",
     "express": "^4.21.2",
     "isbot": "^4.1.0",
