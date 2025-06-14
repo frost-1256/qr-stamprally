@@ -3,6 +3,12 @@
   "private": true,
   "sideEffects": false,
   "type": "module",
+  "overrides": {
+    "react-qr-reader": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    }
+  },
   "scripts": {
     "build": "remix vite:build",
     "dev": "node ./server.js",
@@ -19,7 +25,8 @@
     "express": "^4.21.2",
     "isbot": "^4.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-qr-reader": "^3.0.0-beta-1"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.16.8",
