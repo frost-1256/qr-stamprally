@@ -22,11 +22,11 @@ export default function Index() {
       </div>
 
     </div>
-      <div className="grid justify-center grid-cols-2 gap-4 m-5">
+      <div className="flex justify-center flex-wrap m-10">
         {stamps.map((stamp) => (
-          <div key={stamp.id} className="border p-4">
+          <div key={stamp.id} className="border p-10 m-3 w-64 bg-cyan-200">
             <h2 className="font-bold">{stamp.name}</h2>
-            {stamp.stamp_img && <img src={stamp.stamp_img} alt={stamp.name} />}
+            {stamp.stamp_img && <img src={stamp.stamp_img} alt={stamp.name} className="rounded-full " />}
           </div>
         ))}
       </div>
