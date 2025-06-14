@@ -1,0 +1,22 @@
+[
+    {
+        "id" : "1",
+        "name" : "hoge",
+        "stamp_img" : ""
+    },
+    {
+        "id" : "2",
+        "name" : "fuga",
+        "stamp_img" : ""
+    },
+    { 
+        "id" : "3",
+        "name" : "piyo",
+        "stamp_img" : ""  
+    },
+    {
+        "id" : "4",
+        "name" : "hogefuga",
+        "stamp_img" : ""
+    }
+]
