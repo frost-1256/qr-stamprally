@@ -18,5 +18,10 @@
         "id" : "4",
         "name" : "hogefuga",
         "stamp_img" : ""
+    },
+    {
+        "id": "5",
+        "name": "piyopiyo",
+        "stamp_img": ""
     }
 ]
