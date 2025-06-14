@@ -16,6 +16,8 @@
           packages = [ 
             pkgs.cowsay 
             pkgs.nodejs_24
+            pkgs.ffmpeg-full
+            pkgs.nodePackages_latest.vercel
           ];
           shellHook = ''zsh'';
         };

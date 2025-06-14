@@ -1,0 +1,28 @@
+[
+    {
+        "id" : "1",
+        "name" : "hoge",
+        "stamp_img" : "stamps/hatena.webp",
+        "stamp_clear": "stamps_clear/stamp.webp"
+    },
+    {
+        "id" : "2",
+        "name" : "fuga",
+        "stamp_img" : "stamps/hatena.webp"
+    },
+    { 
+        "id" : "3",
+        "name" : "piyo",
+        "stamp_img" : "stamps/hatena.webp"  
+    },
+    {
+        "id" : "4",
+        "name" : "hogefuga",
+        "stamp_img" : "stamps/hatena.webp"
+    },
+    {
+        "id": "5",
+        "name": "piyopiyo",
+        "stamp_img": "stamps/hatena.webp"
+    }
+]
