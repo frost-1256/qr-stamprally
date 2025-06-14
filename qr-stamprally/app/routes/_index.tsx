@@ -15,13 +15,13 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div>
- <div className="grid justify-center">
-      <div >
-        <h1 className="font-bold mt-1 mb-2 grid justify-center">スタンプラリー</h1> 
-    <button onClick={tmp_alert} className="inline-flex h-10 items-center justify-center rounded-md bg-cyan-500 px-3 font-medium text-neutral-50 shadow-lg shadow-neutral-500/20 transition active:scale-90">スタンプを押す</button>
-      </div>
+      <div className="grid justify-center">
+        <div >
+          <h1 className="font-bold mt-1 mb-2 grid justify-center">スタンプラリー</h1>
+          <button onClick={tmp_alert} className="inline-flex h-10 items-center justify-center rounded-md bg-cyan-500 px-3 font-medium text-neutral-50 shadow-lg shadow-neutral-500/20 transition active:scale-90">スタンプを押す</button>
+        </div>
 
-    </div>
+      </div>
       <div className="flex justify-center flex-wrap m-10">
         {stamps.map((stamp) => (
           <div key={stamp.id} className="border p-10 m-3 w-64 bg-cyan-200">
@@ -32,5 +32,4 @@ export default function Index() {
       </div>
 
     </div>
-     );
-}
+  );}
